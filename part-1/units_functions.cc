@@ -1,31 +1,23 @@
-// TODO: Add your header
+// Jemin Song
+// jeminsong0119@csu.fullerton.edu
+// @jeminsong0119
+// Partners: @ethan888
 
 #include "units_functions.h"
 
-// Convert milliliters to teaspoons
 double MlToTsp(double volume) {
-  // TODO: Convert milliliters to teaspoons
-  // Remember, dividing milliliters by 4.929 will convert milliliters to
-  // teaspoons.
+  double teaspoons = (volume / 4.929);
+  return teaspoons;
 }
-
-// Convert milliliters to tablespoons
 double MlToTbsp(double volume) {
-  // TODO: Convert milliliters to tablespoons
-  // Remember, if you convert milliliters to teaspoons first, you can divide
-  // teaspoons by 3 to find the number of tablespoons
+  double tablespoons = MlToTsp(volume / 3.0);
+  return tablespoons;
 }
-
-// Convert milliliters to fluid ounces
 double MlToOz(double volume) {
-  // TODO: Convert milliliters to fluid ounces
-  // Remember, that if you convert to tablespoons first, you can divide
-  // tablesppons by 2 to find the number of ounces
+  double ounces = MlToTbsp(volume / 2.0);
+  return ounces;
 }
-
-// Convert milliliters to cups
 double MlToCup(double volume) {
-  // TODO: Convert milliliters to cups
-  // Remember, that if you convert to fluid ounces first, you can divide by 8 to
-  // find the number of cups
+  double cups = MlToOz(volume / 8.0);
+  return cups;
 }

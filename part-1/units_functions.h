@@ -1,4 +1,7 @@
-// TODO: Add your header
+// Jemin Song
+// jeminsong0119@csu.fullerton.edu
+// @jeminsong0119
+// Partners: @ethan888
 
 /* Do not edit below this line. */
 /* Do not edit below this line. */
